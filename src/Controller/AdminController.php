@@ -43,6 +43,7 @@ class AdminController extends AbstractController
 		$client = new Client();
 		$form = $this->createForm(ClientType::class, $client);
 		
+		
 		// Contrôle du mdp si method POST ou affichage du formulaire dans le cas contraire
 		if ($request->getMethod() == 'POST')
 		{
